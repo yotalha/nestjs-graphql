@@ -1,8 +1,8 @@
-import { ArgsType, Field } from "@nestjs/graphql";
+import { Field, InputType } from "@nestjs/graphql";
 import { IsNotEmpty } from "class-validator";
 
-@ArgsType()
-export class GetUserArgs {
+@InputType()
+export class DeleteUserInput {
     @Field()
     @IsNotEmpty()
     userId: string;
